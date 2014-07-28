@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><launchConfiguration type="com.ibm.streams.studio.launchers.launchConfigurationType3">
+<stringAttribute key="adl" value="/home/streamsadmin/workspace/_UZH/output/my.sample.Main/Distributed/my.sample.Main.adl"/>
+<stringAttribute key="buildConfig" value="Distributed"/>
+<stringAttribute key="compositeName" value="my.sample::Main"/>
+<stringAttribute key="instance" value="streams@streamsadmin"/>
+<booleanAttribute key="isStandalone" value="false"/>
+<stringAttribute key="loggingLevel" value="DEFAULT"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/_UZH"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<listAttribute key="parameterList"/>
+<stringAttribute key="projectName" value="_UZH"/>
+<booleanAttribute key="prompt" value="true"/>
+<stringAttribute key="sampleName" value=""/>
+<stringAttribute key="samplePath" value=""/>
+<stringAttribute key="tracingLevel" value="DEFAULT"/>
+</launchConfiguration>

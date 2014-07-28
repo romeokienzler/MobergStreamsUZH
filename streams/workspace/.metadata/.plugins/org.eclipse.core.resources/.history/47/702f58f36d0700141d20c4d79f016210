@@ -1,0 +1,23 @@
+namespace my.sample ;
+
+composite Main
+{
+	graph // End of EmployeeDataFile = DirectoryScan()
+
+	// Directory scan for department data records.
+		stream<rstring line> Data = DirectoryScan()
+		{
+			param
+				directory : "/home/streamsadmin/data/testdata_valeria/Patient_X/" ;
+				sleepTime : 3.0 ;
+				pattern : "[a-zA-Z,]{1,}data" ;
+				initDelay : 3.0 ;
+		}
+
+		 Sink = TCPSink(Data)
+		{
+			param
+				port : 2323d ;
+		}
+
+}

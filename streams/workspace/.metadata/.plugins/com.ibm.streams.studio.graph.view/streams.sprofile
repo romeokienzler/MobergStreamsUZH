@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="ASCII"?>
+<profilemodel:Profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.streams.studio.graph.core="http://www.ibm.com/streams/groupmodel" xmlns:profilemodel="http://www.ibm.com/streams/profilemodel" version="1.0.1">
+  <colorOptions name="Health" builtIn="true" decorateLinkWidth="false">
+    <colors>-42656</colors>
+    <colors>-1004776</colors>
+    <colors>-12467135</colors>
+    <groupSet xsi:type="com.ibm.streams.studio.graph.core:HealthGroupSet">
+      <groups xsi:type="com.ibm.streams.studio.graph.core:UnhealthyGroup" name="Unhealthy"/>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:AlertGroup" name="Alert"/>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:HealthyGroup" name="Healthy"/>
+    </groupSet>
+  </colorOptions>
+  <colorOptions name="PE State" builtIn="true">
+    <colors>-4954291</colors>
+    <colors>-35528</colors>
+    <colors>-14715394</colors>
+    <colors>-7180637</colors>
+    <colors>-14898056</colors>
+    <colors>-202621</colors>
+    <colors>-1171379</colors>
+    <colors>-16777216</colors>
+    <groupSet xsi:type="com.ibm.streams.studio.graph.core:PEStateGroupSet" name="PE State">
+      <groups xsi:type="com.ibm.streams.studio.graph.core:PEStateGroup" name="Constructed"/>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:PEStateGroup" name="Submitted" peState="4"/>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:PEStateGroup" name="Starting" peState="3"/>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:PEStateGroup" name="Restarting" peState="1"/>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:PEStateGroup" name="Running" peState="2"/>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:PEStateGroup" name="Stopping" peState="6"/>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:PEStateGroup" name="Stopped" peState="5"/>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:PEStateGroup" name="Unknown" peState="7"/>
+    </groupSet>
+  </colorOptions>
+  <colorOptions name="Flow" builtIn="true">
+    <colors>-16777216</colors>
+    <colors>-4954291</colors>
+    <colors>-7180637</colors>
+    <colors>-14715394</colors>
+    <colors>-14898056</colors>
+    <colors>-202621</colors>
+    <colors>-35528</colors>
+    <colors>-1171379</colors>
+    <colors>-65499</colors>
+    <groupSet xsi:type="com.ibm.streams.studio.graph.core:FlowGroupSet">
+      <properties key="metric" value="nTuples/s"/>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="0">
+        <properties key="min" value="0"/>
+        <properties key="max" value="0"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="1 - 10">
+        <properties key="min" value="1"/>
+        <properties key="max" value="10"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="11 - 100">
+        <properties key="min" value="11"/>
+        <properties key="max" value="100"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="101 - 500">
+        <properties key="min" value="101"/>
+        <properties key="max" value="500"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="501 - 1,000">
+        <properties key="min" value="501"/>
+        <properties key="max" value="1000"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="1,001 - 5,000">
+        <properties key="min" value="1001"/>
+        <properties key="max" value="5000"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="5,001 - 10,000">
+        <properties key="min" value="5001"/>
+        <properties key="max" value="10000"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="10,001 - 100,000">
+        <properties key="min" value="10001"/>
+        <properties key="max" value="100000"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name=">= 100,001">
+        <properties key="min" value="100001"/>
+        <properties key="max" value="9223372036854775807"/>
+      </groups>
+    </groupSet>
+  </colorOptions>
+  <colorOptions name="Flow Under 100" builtIn="true">
+    <colors>-16777216</colors>
+    <colors>-4954291</colors>
+    <colors>-7180637</colors>
+    <colors>-14715394</colors>
+    <colors>-14898056</colors>
+    <colors>-202621</colors>
+    <colors>-35528</colors>
+    <colors>-1171379</colors>
+    <colors>-65499</colors>
+    <groupSet xsi:type="com.ibm.streams.studio.graph.core:FlowGroupSet">
+      <properties key="metric" value="nTuples/s"/>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="0">
+        <properties key="min" value="0"/>
+        <properties key="max" value="0"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="1 - 5">
+        <properties key="min" value="1"/>
+        <properties key="max" value="5"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="6 - 10">
+        <properties key="min" value="6"/>
+        <properties key="max" value="10"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="11 - 20">
+        <properties key="min" value="11"/>
+        <properties key="max" value="20"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="21 - 30">
+        <properties key="min" value="21"/>
+        <properties key="max" value="30"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="31 - 40">
+        <properties key="min" value="31"/>
+        <properties key="max" value="40"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="41 - 50">
+        <properties key="min" value="41"/>
+        <properties key="max" value="50"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="51 - 75">
+        <properties key="min" value="51"/>
+        <properties key="max" value="75"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="76 - 100">
+        <properties key="min" value="76"/>
+        <properties key="max" value="100"/>
+      </groups>
+    </groupSet>
+  </colorOptions>
+  <colorOptions name="Flow Under 10000" builtIn="true">
+    <colors>-16777216</colors>
+    <colors>-4954291</colors>
+    <colors>-7180637</colors>
+    <colors>-14715394</colors>
+    <colors>-14898056</colors>
+    <colors>-202621</colors>
+    <colors>-35528</colors>
+    <colors>-1171379</colors>
+    <colors>-65499</colors>
+    <groupSet xsi:type="com.ibm.streams.studio.graph.core:FlowGroupSet">
+      <properties key="metric" value="nTuples/s"/>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="0">
+        <properties key="min" value="0"/>
+        <properties key="max" value="0"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="1 - 500">
+        <properties key="min" value="1"/>
+        <properties key="max" value="500"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="501 - 1000">
+        <properties key="min" value="501"/>
+        <properties key="max" value="1000"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="1001 - 2000">
+        <properties key="min" value="1001"/>
+        <properties key="max" value="2000"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="2001 - 3000">
+        <properties key="min" value="2001"/>
+        <properties key="max" value="3000"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="3001 - 4000">
+        <properties key="min" value="3001"/>
+        <properties key="max" value="4000"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="4001 - 5000">
+        <properties key="min" value="4001"/>
+        <properties key="max" value="5000"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="5001 - 7500">
+        <properties key="min" value="5001"/>
+        <properties key="max" value="7500"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="7501 - 10000">
+        <properties key="min" value="7501"/>
+        <properties key="max" value="10000"/>
+      </groups>
+    </groupSet>
+  </colorOptions>
+  <colorOptions name="nTuplesSubmitted" builtIn="true">
+    <colors>-16777216</colors>
+    <colors>-4954291</colors>
+    <colors>-7180637</colors>
+    <colors>-14715394</colors>
+    <colors>-14898056</colors>
+    <colors>-202621</colors>
+    <colors>-35528</colors>
+    <colors>-1171379</colors>
+    <colors>-65499</colors>
+    <groupSet xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroupSet">
+      <properties key="metric" value="nTuplesSubmitted"/>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="0">
+        <properties key="min" value="0"/>
+        <properties key="max" value="0"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="1 - 10">
+        <properties key="min" value="1"/>
+        <properties key="max" value="10"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="11 - 100">
+        <properties key="min" value="11"/>
+        <properties key="max" value="100"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="101 - 500">
+        <properties key="min" value="101"/>
+        <properties key="max" value="500"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="501 - 1,000">
+        <properties key="min" value="501"/>
+        <properties key="max" value="1000"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="1,001 - 5,000">
+        <properties key="min" value="1001"/>
+        <properties key="max" value="5000"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="5,001 - 10,000">
+        <properties key="min" value="5001"/>
+        <properties key="max" value="10000"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="10,001 - 100,000">
+        <properties key="min" value="10001"/>
+        <properties key="max" value="100000"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name=">= 100,001">
+        <properties key="min" value="100001"/>
+        <properties key="max" value="9223372036854775807"/>
+      </groups>
+    </groupSet>
+  </colorOptions>
+  <colorOptions name="nTuplesProcessed" builtIn="true">
+    <colors>-16777216</colors>
+    <colors>-4954291</colors>
+    <colors>-7180637</colors>
+    <colors>-14715394</colors>
+    <colors>-14898056</colors>
+    <colors>-202621</colors>
+    <colors>-35528</colors>
+    <colors>-1171379</colors>
+    <colors>-65499</colors>
+    <groupSet xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroupSet">
+      <properties key="metric" value="nTuplesProcessed"/>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="0">
+        <properties key="min" value="0"/>
+        <properties key="max" value="0"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="1 - 10">
+        <properties key="min" value="1"/>
+        <properties key="max" value="10"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="11 - 100">
+        <properties key="min" value="11"/>
+        <properties key="max" value="100"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="101 - 500">
+        <properties key="min" value="101"/>
+        <properties key="max" value="500"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="501 - 1,000">
+        <properties key="min" value="501"/>
+        <properties key="max" value="1000"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="1,001 - 5,000">
+        <properties key="min" value="1001"/>
+        <properties key="max" value="5000"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="5,001 - 10,000">
+        <properties key="min" value="5001"/>
+        <properties key="max" value="10000"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="10,001 - 100,000">
+        <properties key="min" value="10001"/>
+        <properties key="max" value="100000"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name=">= 100,001">
+        <properties key="min" value="100001"/>
+        <properties key="max" value="9223372036854775807"/>
+      </groups>
+    </groupSet>
+  </colorOptions>
+  <colorOptions name="congestionFactor" builtIn="true">
+    <colors>-16777216</colors>
+    <colors>-4954291</colors>
+    <colors>-7180637</colors>
+    <colors>-14715394</colors>
+    <colors>-14898056</colors>
+    <colors>-202621</colors>
+    <colors>-35528</colors>
+    <colors>-1171379</colors>
+    <groupSet xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroupSet">
+      <properties key="metric" value="congestionFactor"/>
+      <properties key="min" value="0"/>
+      <properties key="max" value="90"/>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="0">
+        <properties key="min" value="0"/>
+        <properties key="max" value="0"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="1->15">
+        <properties key="min" value="1"/>
+        <properties key="max" value="15"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="16->30">
+        <properties key="min" value="16"/>
+        <properties key="max" value="30"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="31->45">
+        <properties key="min" value="31"/>
+        <properties key="max" value="45"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="46->60">
+        <properties key="min" value="46"/>
+        <properties key="max" value="60"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="61->75">
+        <properties key="min" value="61"/>
+        <properties key="max" value="75"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="76->90">
+        <properties key="min" value="76"/>
+        <properties key="max" value="90"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name=">=91">
+        <properties key="min" value="91"/>
+        <properties key="max" value="9223372036854775807"/>
+      </groups>
+    </groupSet>
+  </colorOptions>
+  <colorOptions name="loadAverage" builtIn="true">
+    <colors>-16777216</colors>
+    <colors>-4954291</colors>
+    <colors>-7180637</colors>
+    <colors>-14715394</colors>
+    <colors>-14898056</colors>
+    <colors>-202621</colors>
+    <colors>-35528</colors>
+    <colors>-1171379</colors>
+    <groupSet xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroupSet">
+      <properties key="metric" value="loadAverage"/>
+      <properties key="min" value="0"/>
+      <properties key="max" value="90"/>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="0">
+        <properties key="min" value="0"/>
+        <properties key="max" value="0"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="1->15">
+        <properties key="min" value="1"/>
+        <properties key="max" value="15"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="16->30">
+        <properties key="min" value="16"/>
+        <properties key="max" value="30"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="31->45">
+        <properties key="min" value="31"/>
+        <properties key="max" value="45"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="46->60">
+        <properties key="min" value="46"/>
+        <properties key="max" value="60"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="61->75">
+        <properties key="min" value="61"/>
+        <properties key="max" value="75"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="76->90">
+        <properties key="min" value="76"/>
+        <properties key="max" value="90"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name=">=91">
+        <properties key="min" value="91"/>
+        <properties key="max" value="9223372036854775807"/>
+      </groups>
+    </groupSet>
+  </colorOptions>
+  <colorOptions name="nFinalPunctsSubmitted" builtIn="true">
+    <colors>-12467135</colors>
+    <colors>-16777216</colors>
+    <groupSet xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroupSet">
+      <properties key="metric" value="nFinalPunctsSubmitted"/>
+      <properties key="min" value="0"/>
+      <properties key="max" value="9223372036854775807"/>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name="0">
+        <properties key="min" value="0"/>
+        <properties key="max" value="0"/>
+      </groups>
+      <groups xsi:type="com.ibm.streams.studio.graph.core:MetricRangeGroup" name=">1">
+        <properties key="min" value="1"/>
+      </groups>
+    </groupSet>
+  </colorOptions>
+</profilemodel:Profile>

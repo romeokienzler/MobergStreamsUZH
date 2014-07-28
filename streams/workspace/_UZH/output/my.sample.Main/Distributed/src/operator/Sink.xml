@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<operatorInstanceModel xmlns="http://www.ibm.com/xmlns/prod/streams/spl/operator/instance" xmlns:tt="http://www.ibm.com/xmlns/prod/streams/spl/tupleType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <context>
+    <kind>spl.utility::Custom</kind>
+    <class>Sink</class>
+    <operatorModelDirectory>/opt/ibm/InfoSphereStreams/toolkits/spl/spl/utility/Custom</operatorModelDirectory>
+    <applicationDirectory>/home/streamsadmin/workspace/_UZH</applicationDirectory>
+    <dataDirectory>/home/streamsadmin/workspace/_UZH/data</dataDirectory>
+    <outputDirectory>/home/streamsadmin/workspace/_UZH/output/my.sample.Main/Distributed</outputDirectory>
+    <optimized>false</optimized>
+    <verbose>false</verbose>
+    <networkByteOrdering>false</networkByteOrdering>
+    <codeBeautification>false</codeBeautification>
+    <includes>
+      <include>"../type/BeJwrMSw2z00tLk5MTwUAGG4EA1.h"</include>
+    </includes>
+    <stateVariables/>
+    <runtimeConstants/>
+    <sourceLocation>
+      <file>my.sample/Main.spl</file>
+      <line>39</line>
+      <column>1</column>
+    </sourceLocation>
+    <productVersion>3.2.1.0</productVersion>
+    <checkpointKind>none</checkpointKind>
+  </context>
+
+  <parameters/>
+
+  <inputPorts>
+    <inputPort>
+      <index>0</index>
+      <tupleCppName>iport$0</tupleCppName>
+      <tupleCppType>SPL::BeJwrMSw2z00tLk5MTwUAGG4EA1</tupleCppType>
+      <tupleSPLType>tuple&lt;rstring message&gt;</tupleSPLType>
+      <facade>false</facade>
+      <mutationAllowed>false</mutationAllowed>
+      <sourceLocation>
+        <file>my.sample/Main.spl</file>
+        <line>39</line>
+        <column>21</column>
+      </sourceLocation>
+      <tupleLogic>::SPL::Functions::Utility::printStringLn(iport$0.get_message());
+</tupleLogic>
+      <attributes>
+        <attribute>
+          <name>message</name>
+          <cppType>SPL::rstring</cppType>
+          <splType>rstring</splType>
+        </attribute>
+      </attributes>
+      <tuple>
+        <tt:attr name="message" type="rstring"/>
+      </tuple>
+    </inputPort>
+  </inputPorts>
+
+  <outputPorts/>
+
+</operatorInstanceModel>

@@ -1,0 +1,68 @@
+
+**** Build of configuration Release for project StreamsToPythonLib ****
+
+make all 
+Building file: ../StreamsToPython.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/python2.6 -O3 -Wall -c -fmessage-length=0 -fPIC `/opt/ibm/InfoSphereStreams/bin/dst-pe-pkg-config.sh --cflags dst-spl-pe-install` -MMD -MP -MF"StreamsToPython.d" -MT"StreamsToPython.d" -o"StreamsToPython.o" "../StreamsToPython.cpp"
+In file included from ../StreamsToPython.cpp:10:
+../StreamsToPython.h:18:20: error: Python.h: No such file or directory
+../StreamsToPython.h:49: error: ISO C++ forbids declaration of ‘PyObject’ with no type
+../StreamsToPython.h:49: error: expected ‘;’ before ‘*’ token
+../StreamsToPython.h:50: error: ISO C++ forbids declaration of ‘PyObject’ with no type
+../StreamsToPython.h:50: error: expected ‘;’ before ‘*’ token
+../StreamsToPython.cpp: In constructor ‘calling_python_from_streams::GlobalStreamsToPythonSession::GlobalStreamsToPythonSession()’:
+../StreamsToPython.cpp:22: error: ‘pFunc1’ was not declared in this scope
+../StreamsToPython.cpp:23: error: ‘pFunc2’ was not declared in this scope
+../StreamsToPython.cpp:46: error: ‘Py_Initialize’ was not declared in this scope
+../StreamsToPython.cpp: In destructor ‘virtual calling_python_from_streams::GlobalStreamsToPythonSession::~GlobalStreamsToPythonSession()’:
+../StreamsToPython.cpp:58: error: ‘pFunc1’ was not declared in this scope
+../StreamsToPython.cpp:59: error: ‘Py_DECREF’ was not declared in this scope
+../StreamsToPython.cpp:62: error: ‘pFunc2’ was not declared in this scope
+../StreamsToPython.cpp:63: error: ‘Py_DECREF’ was not declared in this scope
+../StreamsToPython.cpp: In member function ‘SPL::boolean calling_python_from_streams::GlobalStreamsToPythonSession::getIpAddressFromUrl(const SPL::rstring&, SPL::rstring&, SPL::rstring&, SPL::rstring&, SPL::rstring&)’:
+../StreamsToPython.cpp:117: error: ‘pFunc1’ was not declared in this scope
+../StreamsToPython.cpp:118: error: ‘PyObject’ was not declared in this scope
+../StreamsToPython.cpp:118: error: ‘pName’ was not declared in this scope
+../StreamsToPython.cpp:118: error: ‘pModule’ was not declared in this scope
+../StreamsToPython.cpp:121: error: ‘PyString_FromString’ was not declared in this scope
+../StreamsToPython.cpp:126: error: ‘PyErr_Occurred’ was not declared in this scope
+../StreamsToPython.cpp:127: error: ‘PyErr_Print’ was not declared in this scope
+../StreamsToPython.cpp:135: error: ‘PyImport_Import’ was not declared in this scope
+../StreamsToPython.cpp:137: error: ‘Py_DECREF’ was not declared in this scope
+../StreamsToPython.cpp:142: error: ‘PyErr_Occurred’ was not declared in this scope
+../StreamsToPython.cpp:143: error: ‘PyErr_Print’ was not declared in this scope
+../StreamsToPython.cpp:151: error: ‘PyObject_HasAttrString’ was not declared in this scope
+../StreamsToPython.cpp:154: error: ‘PyErr_Occurred’ was not declared in this scope
+../StreamsToPython.cpp:155: error: ‘PyErr_Print’ was not declared in this scope
+../StreamsToPython.cpp:165: error: ‘PyObject_GetAttrString’ was not declared in this scope
+../StreamsToPython.cpp:170: error: ‘PyErr_Occurred’ was not declared in this scope
+../StreamsToPython.cpp:171: error: ‘PyErr_Print’ was not declared in this scope
+../StreamsToPython.cpp:182: error: ‘PyCallable_Check’ was not declared in this scope
+../StreamsToPython.cpp:185: error: ‘PyErr_Occurred’ was not declared in this scope
+../StreamsToPython.cpp:186: error: ‘PyErr_Print’ was not declared in this scope
+../StreamsToPython.cpp:197: error: ‘PyObject_HasAttrString’ was not declared in this scope
+../StreamsToPython.cpp:200: error: ‘PyErr_Occurred’ was not declared in this scope
+../StreamsToPython.cpp:201: error: ‘PyErr_Print’ was not declared in this scope
+../StreamsToPython.cpp:211: error: ‘pFunc2’ was not declared in this scope
+../StreamsToPython.cpp:216: error: ‘PyErr_Occurred’ was not declared in this scope
+../StreamsToPython.cpp:217: error: ‘PyErr_Print’ was not declared in this scope
+../StreamsToPython.cpp:228: error: ‘PyCallable_Check’ was not declared in this scope
+../StreamsToPython.cpp:231: error: ‘PyErr_Occurred’ was not declared in this scope
+../StreamsToPython.cpp:232: error: ‘PyErr_Print’ was not declared in this scope
+../StreamsToPython.cpp:250: error: ‘PyObject’ was not declared in this scope
+../StreamsToPython.cpp:250: error: ‘pValue’ was not declared in this scope
+../StreamsToPython.cpp:251: error: ‘pFunc1’ was not declared in this scope
+../StreamsToPython.cpp:251: error: ‘PyObject_CallFunction’ was not declared in this scope
+../StreamsToPython.cpp:255: error: ‘PyString_AsString’ was not declared in this scope
+../StreamsToPython.cpp:258: error: ‘Py_DECREF’ was not declared in this scope
+../StreamsToPython.cpp:263: error: ‘PyErr_Occurred’ was not declared in this scope
+../StreamsToPython.cpp:264: error: ‘PyErr_Print’ was not declared in this scope
+../StreamsToPython.cpp:272: error: ‘PyErr_Occurred’ was not declared in this scope
+../StreamsToPython.cpp:273: error: ‘PyErr_Print’ was not declared in this scope
+../StreamsToPython.cpp:280: error: ‘pFunc2’ was not declared in this scope
+../StreamsToPython.cpp:283: error: ‘PyString_AsString’ was not declared in this scope
+../StreamsToPython.cpp:286: error: ‘Py_DECREF’ was not declared in this scope
+../StreamsToPython.cpp:296: error: ‘PyErr_Occurred’ was not declared in this scope
+../StreamsToPython.cpp:297: error: ‘PyErr_Print’ was not declared in this scope
+make: *** [StreamsToPython.o] Error 1

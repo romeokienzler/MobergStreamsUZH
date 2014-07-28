@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?><libraryInfos>
+<libraryInfo home="/opt/ibm/java-x86_64-60/jre" version="1.6.0">
+<bootpath>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/amd64/default/jclSC160/vm.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/annotation.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/beans.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/java.util.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/jndi.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/logging.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/security.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/sql.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/ibmorb.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/ibmorbapi.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/ibmcfw.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/rt.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/charsets.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/resources.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/ibmpkcs.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/ibmcertpathfw.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/ibmjgssfw.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/ibmjssefw.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/ibmsaslfw.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/ibmjcefw.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/ibmjgssprovider.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/ibmjsseprovider2.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/ibmcertpathprovider.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/management-agent.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/xml.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/jlm.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/javascript.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="/opt/ibm/java-x86_64-60" version="1.6.0">
+<bootpath>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/amd64/default/jclSC160/vm.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/annotation.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/beans.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/java.util.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/jndi.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/logging.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/security.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/sql.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/ibmorb.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/ibmorbapi.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/ibmcfw.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/rt.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/charsets.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/resources.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/ibmpkcs.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/ibmcertpathfw.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/ibmjgssfw.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/ibmjssefw.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/ibmsaslfw.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/ibmjcefw.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/ibmjgssprovider.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/ibmjsseprovider2.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/ibmcertpathprovider.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/management-agent.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/xml.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/jlm.jar"/>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/javascript.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/opt/ibm/java-x86_64-60/jre/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="/opt/ibm/InfoSphereStreams/java" version="1.7.0">
+<bootpath>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/amd64/compressedrefs/jclSC170/vm.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/se-service.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/math.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/jlm.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/ibmorb.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/ibmorbapi.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/ibmcfw.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/ibmpkcs.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/ibmcertpathfw.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/ibmjgssfw.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/ibmjssefw.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/ibmsaslfw.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/ibmjcefw.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/ibmjgssprovider.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/ibmjsseprovider2.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/ibmcertpathprovider.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/xmldsigfw.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/xml.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/charsets.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/resources.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/rt.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="/opt/ibm/InfoSphereStreams/java/jre" version="1.6.0">
+<bootpath>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/amd64/default/jclSC160/vm.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/annotation.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/beans.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/java.util.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/jndi.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/logging.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/security.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/sql.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/ibmorb.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/ibmorbapi.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/ibmcfw.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/rt.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/charsets.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/resources.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/ibmpkcs.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/ibmcertpathfw.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/ibmjgssfw.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/ibmjssefw.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/ibmsaslfw.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/ibmjcefw.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/ibmjgssprovider.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/ibmjsseprovider2.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/ibmcertpathprovider.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/management-agent.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/xml.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/jlm.jar"/>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/javascript.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/opt/ibm/InfoSphereStreams/java/jre/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>

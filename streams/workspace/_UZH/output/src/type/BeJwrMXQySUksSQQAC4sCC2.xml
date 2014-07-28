@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<tupleModel xmlns="http://www.ibm.com/xmlns/prod/streams/spl/tuple" class="BeJwrMXQySUksSQQAC4sCC2" equalitySupported="true" facade="false" splType="tuple&lt;blob data>" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <headers/>
+
+  <attributes>
+    <attribute>
+      <name>data</name>
+      <cppType>SPL::blob</cppType>
+      <splType>blob</splType>
+    </attribute>
+  </attributes>
+
+</tupleModel>

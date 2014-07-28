@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="EditDependencyDialog">
+		<item value="490" key="DIALOG_WIDTH"/>
+		<item value="19" key="DIALOG_Y_ORIGIN"/>
+		<item value="30" key="DIALOG_X_ORIGIN"/>
+		<item value="225" key="DIALOG_HEIGHT"/>
+		<item value="1|Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="BuildOptionsDialog">
+		<item value="680" key="DIALOG_WIDTH"/>
+		<item value="0" key="category"/>
+		<item value="16" key="DIALOG_Y_ORIGIN"/>
+		<item value="638" key="DIALOG_HEIGHT"/>
+		<item value="382" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="EditToolkitDialog">
+		<item value="550" key="DIALOG_WIDTH"/>
+		<item value="201" key="DIALOG_Y_ORIGIN"/>
+		<item value="339" key="DIALOG_HEIGHT"/>
+		<item value="450" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
+</section>

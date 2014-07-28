@@ -1,0 +1,18 @@
+composite Main
+{
+	graph
+		stream<blob data> Data = TCPSource()
+		{
+			param
+				port : 2323u ;
+				format : block ;
+				role : server ;
+				blockSize : 23u ;
+		}
+
+		() as DebugFileSink = FileSink(Data)
+		{
+			param
+				file : "/home/streamsadmin/data/testfile.debug" ;
+		}
+}

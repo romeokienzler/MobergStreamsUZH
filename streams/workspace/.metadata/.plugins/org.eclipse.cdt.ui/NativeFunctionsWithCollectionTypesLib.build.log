@@ -1,0 +1,14 @@
+
+**** Build of configuration Release for project NativeFunctionsWithCollectionTypesLib ****
+
+make all 
+Building file: ../NativeFunctionsWithCollectionTypes.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -fPIC `/opt/ibm/InfoSphereStreams/bin/dst-pe-pkg-config.sh --cflags dst-spl-pe-install` -MMD -MP -MF"NativeFunctionsWithCollectionTypes.d" -MT"NativeFunctionsWithCollectionTypes.d" -o"NativeFunctionsWithCollectionTypes.o" "../NativeFunctionsWithCollectionTypes.cpp"
+Finished building: ../NativeFunctionsWithCollectionTypes.cpp
+ 
+Building target: libNativeFunctionsWithCollectionTypesLib.so
+Invoking: GCC C++ Linker
+g++ -shared -o"libNativeFunctionsWithCollectionTypesLib.so"  ./NativeFunctionsWithCollectionTypes.o   
+Finished building target: libNativeFunctionsWithCollectionTypesLib.so
+ 

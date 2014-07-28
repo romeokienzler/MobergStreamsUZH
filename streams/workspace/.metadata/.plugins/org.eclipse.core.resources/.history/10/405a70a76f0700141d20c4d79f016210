@@ -1,0 +1,38 @@
+namespace my.sample ;
+
+composite Main
+{
+	graph
+
+	//		stream<rstring line> FileNames = DirectoryScan()
+	//		{
+	//			param
+	//				directory : "/home/streamsadmin/data/testdata_valeria/Patient_X/" ;
+	//				sleepTime : 3.0 ;
+	//				pattern : "[a-zA-Z,]{1,}data" ;
+	//				initDelay : 3.0 ;
+	//		}
+	//
+	//		stream<rstring line> Data = FileSource(FileNames)
+	//		{
+	//			param
+	//				format : csv ;
+	//				hasDelayField : true ;
+	//		}
+		stream<blob data> Data = FileSource()
+		{
+			param
+				file : "/home/streamsadmin/data/testdata_valeria/Patient_X/testfile.data" ;
+				format : block ;
+				blocksize : 4096 ;
+		}
+
+		() as DebugSink = TCPSink(Data)
+		{
+			param
+				port : 2323u ;
+				role : server ;
+				flush : 0u ;
+		}
+
+}

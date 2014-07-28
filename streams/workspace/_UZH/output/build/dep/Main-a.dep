@@ -1,0 +1,5 @@
+	@$(CXX) $(SPL_CXXFLAGS) -o bin/Main-a.dpe -fPIC -shared $(PEMain-a) -lstreams-stdtk-runtime $(SPL_LDFLAGS)build/pe/BeJwzcUksSYwHAAaTAIO.o \
+	    build/operator/Data.o \
+	    build/type/BeJwrMXQySUksSQQAC4sCC2.o \
+	    build/type/BeJyrNIo3K04tKkstMkvOyUzNKwEAOPwGCN.o \
+	    build/type/BeJyrNI03Ti4uMy6pKDFOyswzTcrJT842ycnMSwUAf_1wJCo.o 

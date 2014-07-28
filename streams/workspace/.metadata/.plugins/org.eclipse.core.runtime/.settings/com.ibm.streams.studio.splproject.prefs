@@ -1,0 +1,7 @@
+buildPath=includeOnlyExDeps
+buildRemoteCopiedProjects=false
+eclipse.preferences.version=1
+import_dir=/home/streamsadmin/SPL-Examples-For-Beginners/053_java_primitive_operator_with_complex_output_tuple_types
+import_dir1=/home/streamsadmin/SPL-Examples-For-Beginners/049_json_to_tuple_to_json_using_java
+import_dir2=/home/streamsadmin/SPL-Examples-For-Beginners/033_java_primitive_operator_at_work
+import_dir3=/home/streamsadmin/SPL-Examples-For-Beginners/027_java_op_at_work

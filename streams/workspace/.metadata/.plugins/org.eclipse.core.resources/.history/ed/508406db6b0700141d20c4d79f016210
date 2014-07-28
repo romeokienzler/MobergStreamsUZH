@@ -1,0 +1,26 @@
+namespace my.sample ;
+
+composite Main
+{
+	
+	graph // End of EmployeeDataFile = DirectoryScan()
+
+	// Directory scan for department data records.
+		stream<rstring line> DepartmentDataFile = DirectoryScan()
+		{
+			param
+				directory : "/home/streamsadmin/data/testdata_valeria/Patient_X" ;
+				sleepTime : 3.0 ;
+				pattern : ".*\\.data" ;
+				initDelay : 3.0 ;
+		}
+
+		
+		() as FileSink3 = FileSink(DepartmentRecord)
+		{
+			param
+				file : "../test3/result_department.csv" ;
+				flush : 4u ;
+		} // End of FileSink3 = FileSink(DepartmentRecord)	
+
+}

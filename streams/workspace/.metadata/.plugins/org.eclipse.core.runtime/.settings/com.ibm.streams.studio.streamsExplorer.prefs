@@ -1,0 +1,4 @@
+//defaultInstance_file\:/opt/ibm/InfoSphereStreams/=streams@streamsadmin
+defaultInstance=streams@streamsadmin
+eclipse.preferences.version=1
+toolkitLocations=/opt/ibm/InfoSphereStreams/toolkits/com.ibm.streams.bigdata,/opt/ibm/InfoSphereStreams/toolkits/com.ibm.streams.financial,/opt/ibm/InfoSphereStreams/toolkits/com.ibm.streams.timeseries,/opt/ibm/InfoSphereStreams/toolkits/com.ibm.streams.cep,/opt/ibm/InfoSphereStreams/toolkits/com.ibm.streams.text,/opt/ibm/InfoSphereStreams/toolkits/com.ibm.streams.etl,/opt/ibm/InfoSphereStreams/toolkits/com.ibm.streams.db,/opt/ibm/InfoSphereStreams/toolkits/com.ibm.streams.inet,/opt/ibm/InfoSphereStreams/toolkits/com.ibm.streams.messaging,/opt/ibm/InfoSphereStreams/toolkits/com.ibm.streams.mining,/opt/ibm/InfoSphereStreams/toolkits/com.ibm.streams.geospatial,file\:///home/streamsadmin/SPL-Examples-For-Beginners/com.ibm.streamsx.dps,file\:///home/streamsadmin/SPL-Examples-For-Beginners/com.ibm.streamsx.ps

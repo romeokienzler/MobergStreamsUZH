@@ -1,0 +1,54 @@
+namespace my.sample ;
+
+composite Main
+{
+	graph
+
+	//		stream<rstring line> FileNames = DirectoryScan()
+	//		{
+	//			param
+	//				directory : "/home/streamsadmin/data/testdata_valeria/Patient_X/" ;
+	//				sleepTime : 3.0 ;
+	//				pattern : "[a-zA-Z,]{1,}data" ;
+	//				initDelay : 3.0 ;
+	//		}
+	//
+	//		stream<rstring line> Data = FileSource(FileNames)
+	//		{
+	//			param
+	//				format : csv ;
+	//				hasDelayField : true ;
+	//		}
+		stream<blob data> Data = FileSource()
+		{
+			param
+				file : "/home/streamsadmin/data/testfile" ;
+				format : block ;
+				blockSize : 4096u ;
+		}
+
+//	stream <rstring message> Hi = Beacon() {
+//			param
+//				iterations: 5u;
+//				
+//			output
+//				Hi: message = "Hello World!";
+//		} // End of Beacon.
+
+
+() as Sink = Custom(Data) {
+			logic	
+				onTuple	
+					// In the standalone build, you will see this message on your console.
+					// In the distributed build, you will see this message inside the
+					// console log file. [/tmp/streams.<instance_name>@<instance-owner-name>/jobs/<job_id>/pe<pe_id>.pa.out.0
+					printStringLn(message);
+		} // End of Custom.
+//		() as DebugSink = TCPSink(Hi)
+//		{
+//			param
+//				port : 2324u ;
+//				role : server ;
+//				flush : 0u ;
+//		}
+}

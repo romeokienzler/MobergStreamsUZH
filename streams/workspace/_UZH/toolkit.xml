@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<toolkitModel xmlns="http://www.ibm.com/xmlns/prod/streams/spl/toolkit" productVersion="3.2.1.0" xmlns:common="http://www.ibm.com/xmlns/prod/streams/spl/common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <toolkit name="018_directory_scan_at_work" requiredProductVersion="2.0.0" version="1.0.0">
+    <description/>
+    <uriTable>
+      <uri index="1" value="my.sample/Main.spl"/>
+      <uri index="2" value="Main.spl"/>
+    </uriTable>
+    <namespace name="my.sample">
+      <compositeOp column="11" line="3" name="Main" potentialMain="true" uriIndex="1"/>
+    </namespace>
+    <namespace name="">
+      <compositeOp column="10" line="1" name="Main" potentialMain="true" uriIndex="2"/>
+    </namespace>
+  </toolkit>
+
+</toolkitModel>

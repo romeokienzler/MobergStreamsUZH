@@ -1,0 +1,14 @@
+
+**** Build of configuration Release for project PrimitiveOperatorLib ****
+
+make all 
+Building file: ../NameServerLookup.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -fPIC `/opt/ibm/InfoSphereStreams/bin/dst-pe-pkg-config.sh --cflags dst-spl-pe-install` -MMD -MP -MF"NameServerLookup.d" -MT"NameServerLookup.d" -o"NameServerLookup.o" "../NameServerLookup.cpp"
+Finished building: ../NameServerLookup.cpp
+ 
+Building target: libPrimitiveOperatorLib.so
+Invoking: GCC C++ Linker
+g++ -shared -o"libPrimitiveOperatorLib.so"  ./NameServerLookup.o   
+Finished building target: libPrimitiveOperatorLib.so
+ 

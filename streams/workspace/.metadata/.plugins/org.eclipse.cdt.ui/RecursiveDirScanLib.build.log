@@ -1,0 +1,14 @@
+
+**** Build of configuration Release for project RecursiveDirScanLib ****
+
+make all 
+Building file: ../RecursiveDirScan.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -fPIC `/opt/ibm/InfoSphereStreams/bin/dst-pe-pkg-config.sh --cflags dst-spl-pe-install` -MMD -MP -MF"RecursiveDirScan.d" -MT"RecursiveDirScan.d" -o"RecursiveDirScan.o" "../RecursiveDirScan.cpp"
+Finished building: ../RecursiveDirScan.cpp
+ 
+Building target: libRecursiveDirScanLib.so
+Invoking: GCC C++ Linker
+g++ -shared -o"libRecursiveDirScanLib.so"  ./RecursiveDirScan.o   
+Finished building target: libRecursiveDirScanLib.so
+ 

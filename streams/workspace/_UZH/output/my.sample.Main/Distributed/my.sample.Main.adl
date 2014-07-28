@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<applicationSet xmlns="http://www.ibm.com/xmlns/prod/streams/application" name="my.sample::Main.appset" productVersion="3.2.1.0" xmlns:tt="http://www.ibm.com/xmlns/prod/streams/spl/tupleType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <description>my.sample::Main application set</description>
+
+  <application applicationDirectory="../../../." applicationScope="Default" checkpointDirectory="../../../data/ckpt" dataDirectory="../../../data" name="my.sample::Main" outputDirectory="/home/streamsadmin/workspace/_UZH/output/my.sample.Main/Distributed" version="1.0.0">
+    <libraries/>
+    <hostpools>
+      <hostpool index="0" membershipMode="shared" name="$default"/>
+    </hostpools>
+    <tupleTypes>
+      <tupleType index="0">
+        <attribute name="data" type="blob"/>
+        <tuple>
+          <tt:attr name="data" type="blob"/>
+        </tuple>
+      </tupleType>
+    </tupleTypes>
+    <pes>
+      <pe class="BeJwzcUksSYwHAAaTAIO" index="0" language="C++" optimized="false" relocatable="false" restartable="false">
+        <envVars>
+          <envVar name="STREAMS_JAVA_HOME" value="/opt/ibm/InfoSphereStreams/java"/>
+        </envVars>
+        <executable digest="dLgAtSgTIfhY6ocgKDTXQV6S74g=" dynamicLoad="true">
+          <wrapper>none</wrapper>
+          <executableUri>bin/my.sample.Main-a.dpe</executableUri>
+          <arguments/>
+          <dependencies/>
+        </executable>
+        <operInstances>
+          <operInstance class="Data" definitionIndex="0" index="0" name="Data" singleThreadedOnInputs="true" singleThreadedOnOutputs="true">
+            <resources>
+              <poolLocation poolIndex="0"/>
+            </resources>
+            <runtimeConstants>
+              <runtimeConstant name="lit$0" value="&quot;/home/streamsadmin/data/testfile&quot;"/>
+              <runtimeConstant name="lit$1" value="4096"/>
+            </runtimeConstants>
+            <inputPorts/>
+            <outputPorts>
+              <outputPort index="0" isMutable="true" name="Data" streamName="Data" tupleTypeIndex="0" viewable="true">
+                <interPeConnection iportIndex="0" operInstanceIndex="1"/>
+              </outputPort>
+            </outputPorts>
+          </operInstance>
+        </operInstances>
+        <tracing level="error"/>
+        <inputPorts/>
+        <outputPorts>
+          <outputPort encoding="LE" index="0" singleThreadedOnOutput="true" transport="TCP" tupleTypeIndex="0">
+            <staticConnections>
+              <staticConnection iportIndex="0" peIndex="1"/>
+            </staticConnections>
+            <operInstanceConnection operInstanceIndex="0" oportIndex="0"/>
+          </outputPort>
+        </outputPorts>
+      </pe>
+      <pe class="BeJwzNHZJTSpNd8vMSQ3OzMuOBwAtbQXA" index="1" language="C++" optimized="false" relocatable="false" restartable="false">
+        <envVars>
+          <envVar name="STREAMS_JAVA_HOME" value="/opt/ibm/InfoSphereStreams/java"/>
+        </envVars>
+        <executable digest="gbOybld2xWfDt34PHJZ41VdPvok=" dynamicLoad="true">
+          <wrapper>none</wrapper>
+          <executableUri>bin/my.sample.Main-b.dpe</executableUri>
+          <arguments/>
+          <dependencies/>
+        </executable>
+        <operInstances>
+          <operInstance class="DebugFileSink" definitionIndex="1" index="1" name="DebugFileSink" singleThreadedOnInputs="true" singleThreadedOnOutputs="true">
+            <resources>
+              <poolLocation poolIndex="0"/>
+            </resources>
+            <runtimeConstants>
+              <runtimeConstant name="lit$0" value="&quot;/home/streamsadmin/data/testfile.debug&quot;"/>
+            </runtimeConstants>
+            <inputPorts>
+              <inputPort index="0" isMutable="false" name="Data" tupleTypeIndex="0">
+                <interPeConnection operInstanceIndex="0" oportIndex="0"/>
+              </inputPort>
+            </inputPorts>
+            <outputPorts/>
+          </operInstance>
+        </operInstances>
+        <tracing level="error"/>
+        <inputPorts>
+          <inputPort encoding="LE" index="0" transport="TCP" tupleTypeIndex="0">
+            <staticConnections>
+              <staticConnection oportIndex="0" peIndex="0"/>
+            </staticConnections>
+            <operInstanceConnection iportIndex="0" operInstanceIndex="1"/>
+          </inputPort>
+        </inputPorts>
+        <outputPorts/>
+      </pe>
+    </pes>
+    <operDefinitions>
+      <operDefinition index="0" kind="spl.adapter::FileSource">
+        <customMetricIndicies>
+          <customMetricIndex>0</customMetricIndex>
+          <customMetricIndex>1</customMetricIndex>
+        </customMetricIndicies>
+      </operDefinition>
+      <operDefinition index="1" kind="spl.adapter::FileSink">
+        <customMetricIndicies>
+          <customMetricIndex>2</customMetricIndex>
+          <customMetricIndex>3</customMetricIndex>
+        </customMetricIndicies>
+      </operDefinition>
+    </operDefinitions>
+    <composites>
+      <sourceUris>
+        <uri index="0" path="file:///home/streamsadmin/workspace/_UZH/my.sample/Main.spl"/>
+      </sourceUris>
+      <compositeOpers>
+        <compositeOper endLine="51" index="0" kind="my.sample::Main" numberOfInputPorts="0" numberOfOutputPorts="0" sourceIndex="0" startLine="3" toolkitIndex="0">
+          <description>my.sample::Main Composite</description>
+        </compositeOper>
+      </compositeOpers>
+      <compositeOperInstances>
+        <compositeOperInstance compositeOperIndex="0" endLine="51" index="2" name="my.sample::Main" sourceIndex="0" startLine="3">
+          <primitiveOperInstance endLine="29" index="0" kind="spl.adapter::FileSource" name="Data" sourceIndex="0" startLine="22" toolkitIndex="1">
+            <outputPorts>
+              <port index="0">
+                <connections>
+                  <connection operIndex="1" operName="DebugFileSink" portIndex="0" portKind="input"/>
+                </connections>
+              </port>
+            </outputPorts>
+          </primitiveOperInstance>
+          <primitiveOperInstance endLine="42" index="1" kind="spl.adapter::FileSink" name="DebugFileSink" sourceIndex="0" startLine="38" toolkitIndex="1">
+            <inputPorts>
+              <port index="0">
+                <connections>
+                  <connection operIndex="0" operName="Data" portIndex="0" portKind="output"/>
+                </connections>
+              </port>
+            </inputPorts>
+          </primitiveOperInstance>
+        </compositeOperInstance>
+      </compositeOperInstances>
+    </composites>
+    <toolkits>
+      <toolkit index="0" name="018_directory_scan_at_work" uri="file:///home/streamsadmin/workspace/_UZH" version="1.0.0"/>
+      <toolkit index="1" name="spl" uri="file:///opt/ibm/InfoSphereStreams/toolkits/spl" version="1.1.0"/>
+    </toolkits>
+    <customMetrics>
+      <customMetric index="0" kind="Counter" name="nFilesOpened">
+        <description>Number of files opened by the FileSource operator</description>
+      </customMetric>
+      <customMetric index="1" kind="Counter" name="nInvalidTuples">
+        <description>Number of tuples that failed to read correctly</description>
+      </customMetric>
+      <customMetric index="2" kind="Counter" name="nFilesOpened">
+        <description>Number of files opened by the FileSink operator</description>
+      </customMetric>
+      <customMetric index="3" kind="Counter" name="nTupleWriteErrors">
+        <description>Number of tuple writes that failed</description>
+      </customMetric>
+    </customMetrics>
+  </application>
+
+</applicationSet>

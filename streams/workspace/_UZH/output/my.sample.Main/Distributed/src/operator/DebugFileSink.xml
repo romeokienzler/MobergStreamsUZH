@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<operatorInstanceModel xmlns="http://www.ibm.com/xmlns/prod/streams/spl/operator/instance" xmlns:tt="http://www.ibm.com/xmlns/prod/streams/spl/tupleType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <context>
+    <kind>spl.adapter::FileSink</kind>
+    <class>DebugFileSink</class>
+    <operatorModelDirectory>/opt/ibm/InfoSphereStreams/toolkits/spl/spl/adapter/FileSink</operatorModelDirectory>
+    <applicationDirectory>/home/streamsadmin/workspace/_UZH</applicationDirectory>
+    <dataDirectory>/home/streamsadmin/workspace/_UZH/data</dataDirectory>
+    <outputDirectory>/home/streamsadmin/workspace/_UZH/output/my.sample.Main/Distributed</outputDirectory>
+    <optimized>false</optimized>
+    <verbose>false</verbose>
+    <networkByteOrdering>false</networkByteOrdering>
+    <codeBeautification>false</codeBeautification>
+    <includes>
+      <include>"../type/BeJwrMXQySUksSQQAC4sCC2.h"</include>
+    </includes>
+    <stateVariables/>
+    <runtimeConstants>
+      <runtimeConstant>
+        <name>lit$0</name>
+        <cppType>SPL::rstring</cppType>
+        <splType>rstring</splType>
+        <value>"/home/streamsadmin/data/testfile.debug"</value>
+      </runtimeConstant>
+    </runtimeConstants>
+    <sourceLocation>
+      <file>my.sample/Main.spl</file>
+      <line>37</line>
+      <column>3</column>
+    </sourceLocation>
+    <productVersion>3.2.1.0</productVersion>
+    <checkpointKind>none</checkpointKind>
+  </context>
+
+  <parameters>
+    <parameter>
+      <name>file</name>
+      <values>
+        <value>
+          <cppType>SPL::rstring</cppType>
+          <splType>rstring</splType>
+          <hasRuntimeConstant>true</hasRuntimeConstant>
+          <cppExpression>lit$0</cppExpression>
+          <splExpression>"/home/streamsadmin/data/testfile.debug"</splExpression>
+          <hasFunctions>false</hasFunctions>
+          <hasSideEffects>false</hasSideEffects>
+          <hasStreamAttributes>false</hasStreamAttributes>
+          <parameterExpressionMode>Expression</parameterExpressionMode>
+          <sourceLocation>
+            <file>my.sample/Main.spl</file>
+            <line>40</line>
+            <column>12</column>
+          </sourceLocation>
+        </value>
+      </values>
+      <sourceLocation>
+        <file>my.sample/Main.spl</file>
+        <line>40</line>
+        <column>5</column>
+      </sourceLocation>
+    </parameter>
+  </parameters>
+
+  <inputPorts>
+    <inputPort>
+      <index>0</index>
+      <tupleCppName>iport$0</tupleCppName>
+      <tupleCppType>SPL::BeJwrMXQySUksSQQAC4sCC2</tupleCppType>
+      <tupleSPLType>tuple&lt;blob data&gt;</tupleSPLType>
+      <facade>false</facade>
+      <mutationAllowed>false</mutationAllowed>
+      <sourceLocation>
+        <file>my.sample/Main.spl</file>
+        <line>37</line>
+        <column>34</column>
+      </sourceLocation>
+      <attributes>
+        <attribute>
+          <name>data</name>
+          <cppType>SPL::blob</cppType>
+          <splType>blob</splType>
+        </attribute>
+      </attributes>
+      <tuple>
+        <tt:attr name="data" type="blob"/>
+      </tuple>
+    </inputPort>
+  </inputPorts>
+
+  <outputPorts/>
+
+</operatorInstanceModel>
